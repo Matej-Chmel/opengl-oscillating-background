@@ -19,7 +19,24 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AppError.cpp" />
+    <ClCompile Include="debug.cpp" />
+    <ClCompile Include="literals.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="OscColor.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="WindowFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppError.hpp" />
+    <ClInclude Include="colors.hpp" />
+    <ClInclude Include="debug.hpp" />
+    <ClInclude Include="literals.hpp" />
+    <ClInclude Include="OscColor.hpp" />
+    <ClInclude Include="Size.hpp" />
+    <ClInclude Include="Window.hpp" />
+    <ClInclude Include="WindowData.hpp" />
+    <ClInclude Include="WindowFactory.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
