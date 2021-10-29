@@ -24,6 +24,7 @@
     <ClCompile Include="literals.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OscColor.cpp" />
+    <ClCompile Include="Size.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="WindowFactory.cpp" />
   </ItemGroup>

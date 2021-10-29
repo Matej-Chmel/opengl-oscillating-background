@@ -12,8 +12,6 @@ using namespace mch::literals;
 
 constexpr auto SPEED = 0.001f;
 constexpr auto TITLE = "Window";
-constexpr auto WIDTH = 800;
-constexpr auto HEIGHT = 600;
 
 bool running = true;
 
@@ -33,7 +31,7 @@ int main() {
 		if(glfwInit() == GLFW_FALSE)
 			throw mch::AppError("Could not init GLFW.");
 
-		auto windows = mch::WindowFactory({WIDTH, HEIGHT}, TITLE).makeMultiple({
+		auto windows = mch::WindowFactory(glfwGetVideoMode(glfwGetPrimaryMonitor()), TITLE).makeMultiple({
 			mch::OscColor(BLUE, SPEED),
 			mch::OscColor(GREEN, SPEED),
 			mch::OscColor(RED, SPEED),

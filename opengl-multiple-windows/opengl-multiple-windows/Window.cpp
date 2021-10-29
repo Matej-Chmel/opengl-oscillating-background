@@ -21,6 +21,10 @@ namespace mch {
 		return glfwWindowShouldClose(this->w) == GLFW_TRUE;
 	}
 
+	void Window::move(const int x, const int y) {
+		glfwSetWindowPos(this->w, x, y);
+	}
+
 	void Window::render() {
 		this->use();
 		glViewport(0, 0, this->d.size.width, this->d.size.height);

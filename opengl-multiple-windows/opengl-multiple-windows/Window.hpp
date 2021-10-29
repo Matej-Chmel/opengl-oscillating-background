@@ -18,6 +18,7 @@ namespace mch {
 
 		~Window();
 		bool closing();
+		void move(const int x, const int y);
 		void render();
 		void setKeyCallback(const GLFWkeyfun cb);
 		void updateColor(const long long elapsedMS);
