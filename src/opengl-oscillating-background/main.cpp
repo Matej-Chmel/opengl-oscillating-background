@@ -52,7 +52,7 @@ int main() {
 			auto i = windows->begin();
 
 			while(i != windows->end()) {
-				const auto w = *i;
+				const auto& w = *i;
 
 				if(w->closing())
 					i = windows->erase(i);
